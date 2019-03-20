@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+<link rel="stylesheet" type="text/css" href="css/registe.css">
+<link rel="stylesheet" type="text/css" href="js/login.js">
+<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+</head>
+<body>
+<!-- header -->
+<div class="miniheader">
+	<div class="miniheader_left">
+		<a href=""><img src="img/login_new_logo.png" alt=""></a>
+	</div>
+	<div class="miniheader_right">
+		<span><i></i>天天低价</span>
+		<span><i></i>正品保证</span>
+		<span><i></i>15天退货</span>
+		<span><i></i>晒单评价有礼</span>
+	</div>
+</div>
+<!-- login_new_bg -->
+
+<a href="#" class="login_new_bg">
+	<img src="img/f750ff7c1390e676ca0e0d111eb1b8756.jpg" alt="">
+</a>
+<div class="kong">
+<div class="loginRightSecond">
+	<div class="login_new_tabhead">
+		<div class="tit_denglu">
+			<a  class="zhanghao" href="javascript:;" id="zhanghaobtn">账号登录</a>
+			<a class="erwei" href="javascript:;" style="color:#d70057" id="saoMa">扫码登录</a>
+		</div>
+		<!-- 改变部分-->
+		<div class="change2" id="change2" >
+			<div class="pic" >
+				<a class="coadpic" href="">
+					<img src="img/qrcode.png" style="width: 180px;height: 180px" alt="">
+				</a>
+				<a class="phonepic" href="">
+					<img src="img/login_new_promptt.jpg" style="width: 180px;height: 180px" alt="">
+				</a>
+			</div>
+			<div class="load">
+				<p>请使用好乐买APP扫码登录</p>
+		   	    <a href="" class="download">
+		   	    	<span><img src="img/未标题-2.png" alt="" style="width:17px;height:17px"></span>
+		   	    下载好乐买APP
+		   		</a>
+		   	</div>
+		</div>
+		<!-- 改变的第二部分 -->
+		<div class="change1" id="selected" style="display: none">
+			<div class="login_txt">
+				<input type="text" id="userphone" placeholder="已经验证的手机号/邮箱/用户名">
+			</div>
+			<div class="warnning">
+				<i class="warnningPic"></i>
+				<span class="error">请正确输入11位手机号</span>
+			</div>
+			<div class="login_txt">
+				<input type="password" id="userpass" placeholder="密码">
+			</div>
+			<div class="warnning">
+				<i class="warnningPic"></i>
+				<span>请输入正确的密码</span>
+			</div>
+			<p>
+				<input type="button" class="deng"  value="登录">
+			</p>
+			<span class="forget">忘记密码？</span>
+		</div>
+		<div class="icon">
+			<a title="qq" href=""><i class="iconfont icon-qq"></i></a>
+			<a title="收藏" href=""><i class="iconfont icon-shoucang"></a></i>
+			<a title="微信" href=""><i class="iconfont icon-weixin"></i></a>
+			<a title="微博" href=""><i class="iconfont icon-weibo"></i></a>
+			<a title="支付宝" href=""><i class="iconfont icon-zhifupingtai-zhifubao"></i></a>
+			<a href="" class="surprise">注册有惊喜
+				<span><img src="img/surprise.png" style="width:17px;height:17px" alt=""></span>
+			</a>
+		</div>
+	</div>
+	
+</div>
+</div>
+<div class="clearfix"></div>
+
+<div class="minifooter clearfix">
+	<p>Copyright © 2007-2019 OkBuy.com All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天津好乐买信息技术有限公司&nbsp;&nbsp;津B2-20140020&nbsp;&nbsp;京公网安备&nbsp;110105006859</p>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+
+
+	// $(function(){
+	// // $("#userphone").focus(function(){
+	// // 	$(this).parent().css({"border":"1px solid skyblue"});
+	// // })
+	// 	$("#zhanghaobtn").onclick(){
+	// 		$(this).next("selected").css({"display":"block"});
+	// 		$(this).css({"display":"none"});
+	// 	}
+	// })
+	$(function(){
+		$("#zhanghaobtn").click(function(){
+			$(this).css({"color":"#d70057"});
+			$(this).next().css({"color":"black"});
+			$(this).parent().next().css({"display":"none"});
+			$(this).parent().next().next().css({"display":"block"});
+			$(".icon").css({"margin-top":136});
+		})
+		$("#saoMa").click(function(){
+			$(this).css({"color":"#d70057"});
+			$(this).prev().css({"color":"black"});
+			$(this).parent().next().css({"display":"block"});
+			$(this).parent().next().next().css({"display":"none"});
+			$(".icon").css({"margin-top":65});
+		})
+
+		// 二维码划入画出
+		$(".pic").mouseenter(function(){
+			$(".coadpic").animate({left:"25px"},400);
+			$(".phonepic").delay(200).animate({opacity:1},200);
+		})
+		$(".pic").mouseleave(function(){
+			$(".coadpic").delay(80).animate({left:"115px"},350);
+			$(".phonepic").animate({opacity:0},300);
+		})
+		$(".deng").mouseenter(function(){
+			$(this).css({"background":"#df3379"});
+		})
+		$(".deng").mouseleave(function(){
+			$(this).css({"background":"#d70057"});
+		})
+
+	})
+</script>
+
+										

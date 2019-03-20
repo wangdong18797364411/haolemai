@@ -1,0 +1,242 @@
+body,h1,h2,h3,h4,h5,h6,ol,ul,dl,dd,p,input,select,textarea,td{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑"，Arial;
+	/*background: red;*/
+}
+ul,ol{
+	list-style: none;
+}
+img{
+	border:0;
+}
+a{
+	text-decoration:none;
+}
+.clearfix:after{
+	height: 0;
+	content:"";
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+	display: block;
+}
+/*header*/
+.miniheader{
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	/*background: green;*/
+}
+.miniheader_left{
+	float:left;
+}
+.miniheader_right{
+	float: right;
+}
+.miniheader_right span{
+	float: left;
+	line-height: 100px;
+	font-size: 14px;
+	line-height: 100px;
+	color: #666;
+	float: left;
+	padding-left: 68px;
+	margin: 0 auto;
+
+}
+.miniheader_right span i{
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: url(../img/ui_login.png)
+     -76px -60px no-repeat;
+}
+/*login_new_bg*/
+.login_new_bg{
+	position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 560px;
+    overflow: hidden;
+}
+
+.login_new_bg img{
+	/*height: 560px;*/
+	position: absolute;
+	left: 50%;
+	margin-left: -1000px;
+}
+/*.minifooter*/
+
+.minifooter{
+	width: 100%;
+	/*background: green;*/
+}
+.minifooter p{
+	line-height: 12px;
+	font-size: 12px;
+	color: #999;
+	width: 1263px;
+	margin: 88px auto 0;
+	text-align: center;
+}
+/*二维码部分*/
+.kong{
+	width: 1263px;
+	height: 560px;
+	margin: 0 auto;
+	position: relative;
+	/*background: green;*/
+}
+.loginRightSecond{
+    width: 400px;
+    height: 468px;
+    background: white;
+    position: absolute;
+    right:32px;
+    top: 22px;
+    padding-top: 26px;
+    z-index: 100;
+}
+.tit_denglu a{
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    line-height: 20px;
+    cursor: pointer;
+}
+.zhanghao{
+	margin-left: 62px;
+}
+.erwei{
+	margin-left: 77px;
+}
+.pic{
+	height: 213px;
+	position: relative;
+	margin-top: 15px;
+}
+.coadpic{
+	position: absolute;
+	left: 115px;
+	top: 33px;
+	z-index: 10;
+}
+.phonepic{
+	position: absolute;
+	left: 213px;
+	top: 33px;
+	opacity: 0;
+}
+/*.pic:hover .phonepic{
+	display: block;
+	opacity: 1;
+}*/
+.load p{
+	font-size: 13px;
+	color: #666666;
+	line-height: 12px;
+	text-align: center;
+	padding-top: 45px;
+	padding-bottom: 15px;
+}
+.load .download{
+	font-size: 13px;
+	color: #666666;
+	line-height: 12px;
+	text-align: center;
+	padding-left: 148px;
+	position: relative;
+	font-weight: 100;
+}
+.login_new_tabhead .download span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	/*background: green;*/
+	position: absolute;
+	left: 124px;
+	top: 0px;
+}
+.load a{
+	margin-left: 18px;
+}
+.icon{
+	background: #f6f6f6;
+	margin-top:65px; 
+	padding: 19px 0;
+}
+.surprise{
+	font-size: 14px;
+	color: #666;
+	float: right;
+	padding-right: 33px;
+	position:relative;
+}
+.surprise span{
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: red;
+	position: absolute;
+	left: -25px;
+    top: 3px;
+}
+/*改变部分2*/
+.change1{
+	padding: 29px 30px 0;
+}
+.login_txt{
+	background: #fff;
+    border: 1px solid #e0e0e0;
+}
+.login_txt input {
+    height: 46px;
+    width: 328px;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    background: #fff;
+    line-height: 46px;
+    padding-left: 10px;
+    border: none;
+}
+.warnning{
+    height: 30px;
+    line-height: 30px;
+    color: #d00;
+    font-size: 12px;
+    opacity: 0;
+}
+.deng{    
+	width: 341px;
+    height: 50px;
+    background: #d70057;
+    border: none;
+    font-family: 'Microsoft Yahei';
+    cursor: pointer;
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+/*.deng :hover{
+	background: #df3379;//input元素设置背景色好像不起作用
+}*/
+.forget{
+	color:#999999;
+	font-size: 10px;
+	line-height: 10px;
+	float: right;
+	padding-top: 5px;
+}
+.tit_denglu{
+	background: 
+	url(../img/mid_line.png) no-repeat 189px 0px;
+}

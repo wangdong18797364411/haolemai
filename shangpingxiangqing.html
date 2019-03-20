@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>商品详情</title>
+<link rel="stylesheet" href="dist/css/swiper.css">
+<link rel="stylesheet" type="text/css" href="css/shangpinxiangqing.css">
+<style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:gray;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%
+      height: 100%;
+
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    /*放大镜*/
+/*    #procountopenPic img{
+		width: 450px;
+		height: 450px;
+	}
+	#procountopenPic{
+		position: relative;
+	}
+	#da{
+		width: 630px;
+		height: 630px;
+		background: url(img/a3ee290049efd78101812b1f5546f23e.jpg) no-repeat;
+		background-size: 1260px 1260px;
+		position: absolute;
+		top: 309px;
+		left: 513px;;
+		border: 1px solid #999;
+		display: none;
+		z-index: 100;
+	}
+	#cover{
+		width: 230px;
+		height: 230px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #000;
+		opacity: 0.4;
+		display: none;
+	}*/
+  </style>
+</head>
+<body>
+<!-- top -->
+<div class="top">
+	<a href=""></a>
+</div>
+<!-- header -->
+<div class="header">
+	<div class="nav1">
+		<div class="nav1_list">
+			<span class="unlogin">
+				<a href="">登录</a>|
+				<a href="">注册</a>
+			</span>
+			<div class="navinfo">
+				<a href="">我的好乐买
+				<span class="arrowtop"></span></a>
+				<div class="navinfobtm">
+					<p>我的订单</p>
+					<p>我的订单</p>
+					<p>我的订单</p>
+				</div>
+			</div>
+			<div class="navinfo">
+				<a href="">手机好乐买
+				<span class="arrowtop"></span></a>
+				<div class="navinfobtm">
+					<p>我的订单</p>
+					<p>我的订单</p>
+					<p>我的订单</p>
+				</div>
+			</div>
+			<div class="navinfo">
+				<a href="">关注好乐买
+				<span class="arrowtop"></span></a>
+				<div class="navinfobtm">
+					<p>我的订单</p>
+					<p>我的订单</p>
+					<p>我的订单</p>
+				</div>
+			</div>
+			<div class="navinfo">
+				<a href="">客服服务
+				<span class="arrowtop"></span></a>
+				<div class="navinfobtm">
+					<p>客服服务</p>
+					<p>客服建议</p>
+					<p>建议意见</p>
+				</div>
+			</div>
+			<div class="navinfo">
+				<a href="">公告
+				<span class="arrowtop"></span></a>
+				<div class="navinfobtm">
+					<p>客服服务客服服务</p>
+					<p>客服建议客服服务</p>
+					<p>建议意见客服服务</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="search">
+		<div class="logo">
+			<a href="">
+				<img src="img/logo.png" alt="">
+			</a>
+		</div>
+		<div class="middle">
+			<div class="kuang">
+				<input type="text" class="sousuo"  value="新款">
+				<input type="button" id="searchBtn" class="searchBtn" value="" >
+			</div>
+			<span class="hotwords">
+				<a href="">卫衣</a>
+				<a href="">卡洛奇</a>
+				<a href="">斯凯奇</a>
+				<a href="">森马</a>
+				<a href="">Adidas童鞋</a>
+				<a href="">GUESS</a>
+				<a href="">美妆护肤</a>
+			</span>
+		</div>
+		<div class="car">
+			<input type="text" class="carText" value="去购物车结算">
+			<span class="carText_ling">(0)</span>
+			<a href="" class="car_pic"><img src="img/car.png" alt=""></a>
+		</div>	
+	</div>
+</div>
+<!-- nav -->
+<div class="nav2">
+	<div class="w1263">
+		<dl class="nav2wrap clearFix">
+			<dt><a href="" class="fir" style="color: white">首页</a></dt>
+			<dt><a href="" class="sec"></a></dt>
+			<dt>
+				<a href="" class="sport">运动生活<span></span></a>
+				<!-- 运动 -->
+				<div class="nav2main">
+					<div class="mainList mainList1" style="width: 385px;height:372px">
+						<h4>运动导购</h4>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							
+						</div>
+						<div class="minlist">
+							<h4>复古鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>哈伦鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+					</div>
+					<div class="mainList mainList1" style="width: 300px">
+						<h4>品类导购</h4>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>哈伦鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+					</div>
+					<div class="mainList">
+						<h4>名牌导购</h4>
+						<div class="minlist">
+							<a href="">
+								<img src="img/d8a83e754cfbf3ee13aa7db623f30811.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</dt>
+			<dt><a href="" class="cloth" >休闲服饰<span></span></a>
+				<!-- 休闲服饰 -->
+				<div class="nav2main">
+					<div class="mainList mainList1" style="width: 300px;height:372px">
+						<h4>精品服饰</h4>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							
+						</div>
+						<div class="minlist">
+							<h4>复古鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>哈伦鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+					</div>
+					<div class="mainList mainList1" style="width: 300px">
+						<h4>好鞋好裤</h4>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>哈伦鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+					</div>
+					<div class="mainList">
+						<h4>名牌导购</h4>
+						<div class="minlist">
+							<a href="">
+								<img src="img/d8a83e754cfbf3ee13aa7db623f30811.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</dt>
+			<dt><a href="" >男鞋女鞋<span></span></a>
+			<!-- 男鞋女鞋-->
+				<div class="nav2main">
+					<div class="mainList mainList1" style="width: 565px;height:372px">
+						<h4>运动导购</h4>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							
+						</div>
+						<div class="minlist">
+							<h4>复古鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>哈伦鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+					</div>
+					<div class="mainList mainList1" style="width: 250px">
+						<h4>品类导购</h4>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>哈伦鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+					</div>
+					<div class="mainList">
+						<h4>名牌导购</h4>
+						<div class="minlist">
+							<a href="">
+								<img src="img/d8a83e754cfbf3ee13aa7db623f30811.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</dt>
+			<dt><a href="" class="earth">
+				<img  class="earthPic" src="img/earth.gif" alt="">全球购<span></span>
+			    </a>
+			    <!-- 运动 -->
+				<div class="nav2main">
+					<div class="mainList mainList1" style="width: 385px;height:372px">
+						<h4>运动导购</h4>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							
+						</div>
+						<div class="minlist">
+							<h4>复古鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>哈伦鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+					</div>
+					<div class="mainList mainList1" style="width: 380px">
+						<h4>品类导购</h4>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>哈伦鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+					</div>
+					<div class="mainList">
+						<h4>名牌导购</h4>
+						<div class="minlist">
+							<a href="">
+								<img src="img/d8a83e754cfbf3ee13aa7db623f30811.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+		    </dt>
+			<dt><a href="" >家具分配<span></span></a>
+				<!-- 运动 -->
+				<div class="nav2main">
+					<div class="mainList mainList1" style="width: 385px;height:372px">
+						<h4>运动导购</h4>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							
+						</div>
+						<div class="minlist">
+							<h4>复古鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>哈伦鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+					</div>
+					<div class="mainList mainList1" style="width: 380px">
+						<h4>品类导购</h4>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>哈伦鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+						<div class="minlist">
+							<h4>运动鞋</h4>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+							<a href="">跑步鞋</a>
+						</div>
+					</div>
+					<div class="mainList">
+						<h4>名牌导购</h4>
+						<div class="minlist">
+							<a href="">
+								<img src="img/d8a83e754cfbf3ee13aa7db623f30811.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</dt>
+		</dl>
+	</div>
+</div>
+<!-- glass -->
+ <div class="glass">
+ 	<div class="glass1263">
+ 		<p>
+			<a href="" class="one">好乐买</a>
+			<a href="">男装</a>
+			<a href="">男外套</a>
+			<a href="">K.DLEEN男外套</a>
+			<a href="">K.DLEEN男外套D1523a</a>
+ 		</p>
+ 		<div class="procountopen clearFix" style="overflow: hidden">
+ 			<div class="procountopenPic" id="procountopenPic">
+ 				<a href="">
+ 					<img src="img/a3ee290049efd78101812b1f5546f23e.jpg" style="width: 450px;
+	height: 450px;" alt="">
+ 				</a>
+ 				<div id="cover"></div>
+ 			</div>
+ 			<div class="procountopendetail" style="overflow: hidden">
+ 				<div id="da"></div>
+ 				<div class="allName">
+ 					<div class="nameLeft">
+	 					<a href="">凯迪伦</a>
+	 					<a href="">男士</a>
+	 					<a href="">男外套D1523a</a>
+	 				</div>
+ 					<span class="more">更多
+ 						<a href="">凯迪伦</a>
+ 					</span>
+ 				</div>
+				<div class="prodPrice">
+					<div class="line1">
+						<span class="prodName">好乐买价</span>
+						<span class="colorred">￥</span>
+						<span class="prodSign">39</span>
+						<span class="prothrough">￥1299</span>
+						<span class="proCount">0.6折</span>
+						<a href="" class="pingjia">
+							<span class="wordPingjia">累计评价</span>
+							<span class="number">16</span>
+						</a>
+					</div>
+					<div class="line1 line2">
+						<span class="prodName">距结束</span>
+						<span class="day"><i>00</i>天</span>
+						<span class="hour"><i>00</i>时</span>
+						<span class="minute"><i>00</i>分</span>
+						<span class="second"><i>00</i>秒</span>
+					</div>
+					<div class="line1 line3">
+						<span class="prodName">活动</span>
+						<span class="coloren">超值服饰限量购</span>
+						<a href="" class="prodName">进入专场<span class="sanjiaoppic"></span>
+						</a>
+					</div>
+					<div class="line1 line4" style="height:40px">
+						<span class="coloren">限量购</span>
+						<a href="" class="yellow">【省薪享好货】49任选两件
+							<span class="shuangsanjiao"></span>
+						</a>
+					</div>
+				</div>
+				<div class="proColor">
+					<span class="colorText">颜色</span>
+					<img src="img/a45ddcc8d2310ecb98235da3227505444.jpg" alt="">
+			    </div>
+			    <div class="OB"></div>
+			    <div class="prodSize">
+			    	<div>
+			    		<span class="colorSiseText">尺码</span>
+			    		<span class="colorSiseText" style="color: #d70057;padding-left: 22px">尺码对照表</span>
+			    	</div>
+			    </div>
+			    <div class="OB"></div>
+			    <div class="numberCount">
+			    	<span class="textNumber">数量</span>
+			    	<div class="numberBtn">
+			    		<input class="reduce" type="button" value="-"/>
+						<span id="number" style="padding-left:10px;padding-right:10px">1</span>
+						<input class="add" type="button" value="+"/>
+			    	</div>
+			    </div>
+			    <div class="OB"></div>
+			    <div class="carbtn">
+			    	<div class="inputbtn">
+			    		<input type="button" class="carbtn_car" value="加入购物车">
+			    	</div>
+			    	<!-- <div class="getIn">
+			    		<a href="" ><span></span>收藏该商品</a>
+			    	</div> -->
+			    </div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <!-- 导航栏模块 -->
+ <div class="proinfo_main">
+ 	<div class="porinfo_content">
+ 		<ul class="prolist">
+ 			<li class="pro_item">
+ 				<a href="###" class="nava1">商品详情</a>
+ 			</li>
+ 			<li class="pro_item">
+ 				<a href="###"  class="nava1">订单详情</a>
+ 			</li>
+ 			<li class="pro_item">
+ 				<a href="###"  class="nava1">售后保障</a>
+ 			</li>
+ 			<li class="pro_item">
+ 				<a href="###"  class="nava1">好乐买服务</a>
+ 			</li>
+ 		</ul>
+ 		<!-- 商品详情模块 -->
+ 		<div class="pro_detail">
+ 			<div class="canshu">
+ 				<div class="title1"></div>
+	 			<!-- 表格 -->
+	 			<table class="pro_table">
+	 				<tbody>
+	 					<tr>
+	 						<td class="table_tit">商品编号:</td>
+	 						<td>1746635</td>
+	 						<td class="table_tit">性别:</td>
+	 						<td>男</td>
+	 					</tr>
+	 					<tr>
+	 						<td class="table_tit">面料:</td>
+	 						<td>棉</td>
+	 						<td class="table_tit">颜色:</td>
+	 						<td>卡其</td>
+	 					</tr>
+	 					<tr>
+	 						<td class="table_tit">产地:</td>
+	 						<td>中国</td>
+	 						<td class="table_tit">风格:</td>
+	 						<td>时尚</td>
+	 					</tr>
+	 				</tbody>
+	 			</table>
+ 			</div>
+ 			<div class="chima">
+ 				<div class="title2"></div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+<!-- keen -->
+<div class="keen">
+	<div class="row">
+		<div class="rowFir">
+			<div class="coadFir">
+				<a href="">
+					<img src="img/coad.png" alt="">
+				</a><p>好乐买手机端</p>
+			</div>
+			<div class="coadSec">
+				<a href="">
+					<img src="img/coad.png" alt="">
+				</a>
+				<p>好乐买微信公众号</p>
+			</div>
+		</div>
+		<div class="rowSec">
+			<ul>
+				<li class="tit">购物指南</li>
+				<li>购物流程</li>
+				<li>订购方式</li>
+				<li>产常见方式</li>
+				<li>隐私政策</li>
+			</ul>
+			<ul>
+				<li class="tit">配送方式</li>
+				<li>快递配送</li>
+				<li>配送时间</li>
+			</ul>
+			<ul>
+				<li class="tit">支付方式</li>
+				<li>支付方式</li>
+				<li>代金券</li>
+			</ul>
+			<ul>
+				<li class="tit">售后服务</li>
+				<li>退换货政策</li>
+				<li>客服</li>
+			</ul>
+		</div>
+	</div>
+	<div class="police">
+		<a href=""><img src="img/okbuy1-03.png" alt=""></a>
+		<a href=""><img src="img/okbuy1-05.png" alt=""></a>
+		<a href=""><img style= "border:1px solid #999999" src="img/902c39b52902b3bd4ab500babad4e14a.png" alt=""></a>
+		<a href=""><img src="img/bjwj.jpg" alt=""></a>
+	</div>
+	<div class="source">
+		<span>公司介绍  &nbsp;</span>|
+		<span>加入我们  &nbsp;</span>|
+		<span>联系我们  &nbsp;</span>|
+		<span>友情链接  &nbsp;</span>|
+	</div>
+</div>
+<!-- footer -->
+<div class="footer">
+	<p>天津好乐买科技有限公公司&nbsp; CopyRight©2007-2019 &nbsp;OkBuy.com AllRight &nbsp;Reserved &nbsp;天津IPC备160222号 &nbsp;京公安备号10200020100  &nbsp;客服电话：10201022</p>
+</div>
+</body>
+</html>
+
+<!-- 倒计时 -->
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/haolemai.js"></script>
+<!-- 导航栏点击事件 -->
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+
+<script type="text/javascript">
+// 放大镜
+	var procountopenPic = q("#procountopenPic");
+	var da = q("#da");
+	var cover = q("#cover");
+	//显示出来
+	q("#procountopenPic").onmouseenter = function(){
+		da.style.display = "block";
+		cover.style.display = "block";
+	}
+	//离开后消失
+	q("#procountopenPic").onmouseleave = function(){
+		da.style.display = "none";
+		cover.style.display = "none";
+	}       
+	//
+	q("#procountopenPic").onmousemove = function(e){
+		//获取遮罩层的点
+		var left = e.clientX - procountopenPic.offsetLeft - cover.offsetWidth/2;
+		var top = e.clientY - procountopenPic.offsetTop - cover.offsetHeight/2;
+		//边界
+		if(left < 0){
+			left = 0;
+		}
+		var leftMax = procountopenPic.offsetWidth - cover.offsetWidth ;
+		if(left > leftMax){
+			left = leftMax;
+		}
+		if(top < 0){
+			top = 0;
+		}
+		var topMax = procountopenPic.offsetHeight - cover.offsetHeight ;
+		if(top > topMax){
+			top = topMax;
+		}
+		//取值
+		cover.style.left = left + "px";
+		cover.style.top = top + "px";
+		//连接都大盒子的点
+		var x = left * da.offsetWidth / cover.offsetWidth;
+		var y = top * da.offsetHeight / cover.offsetHeight;
+		//大盒子对应的点
+		da.style.backgroundPositionX = -x + "px";
+		da.style.backgroundPositionY = -y + "px";
+	}	
+function q(str){
+		if(str.charAt(0)=="#"){
+			return document.getElementById(str.substring(1));
+		}else if(str.charAt(0)=="."){
+			return document.getElementsByClassName(str.substring(1));
+		}else{
+			return document.getElementsByTagName(str);
+		}
+	}
+// 导航栏点击事件
+
+	// $(function(){
+	// 	$(".nava1").mouseleave(function(){
+	// 		$(this).css("border-bottom","2px solid #d70057")
+	// 		$(this).not().css("border-bottom","2px solid #d70057")
+	// 		// .end().siblings().css("border-bottom","transparent")
+	// 	})
+	// })
+</script>

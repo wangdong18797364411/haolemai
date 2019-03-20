@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>注册</title>
+<link rel="stylesheet" type="text/css" href="css/zhuce.css">
+<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+<!-- <link rel="stylesheet" type="text/css" href="js/tool.js"> -->
+</head>
+<body>
+<!-- header -->
+<div class="miniheader">
+	<div class="miniheader_left">
+		<a href=""><img src="img/login_new_logo.png" alt=""></a>
+	</div>
+	<div class="miniheader_right">
+		<span><i></i>天天低价</span>
+		<span><i></i>正品保证</span>
+		<span><i></i>15天退货</span>
+		<span><i></i>晒单评价有礼</span> 
+	</div>
+</div>
+<!-- login_new_bg -->
+
+<a href="" class="login_new_bg">
+	<img src="img/f750ff7c1390e676ca0e0d111eb1b8756.jpg" alt="">
+</a>
+<div class="kong">
+<div class="loginRightSecond">
+	<div class="newtit">
+		<span>欢迎注册</span>
+		<a href="">登录</a>
+	</div>
+	<!-- 手机好注册 -->
+	<div class="login_text .register_text">
+		<input type="text" id="userphone" placeholder="请输入电话号码"><span></span>
+		<!-- 手机号正确 -->
+		<div class="true" id="true1">
+			<img src="img/vcodeicon.png" alt="">
+		</div>
+	</div>
+	
+	<!-- 请输入手机号 -->
+	<div class="warnning">
+		<i class="warnningPic"></i>
+		<span class="error">请正确输入11位手机号</span>
+	</div>
+	<!-- 密码注册 -->
+	<div class="login_text .register_text passw">
+		<input type="password" id="userpass" placeholder="请设置密码">
+		<!-- 密码正确 -->
+		<div class="true2" id="true2" style="display: none">
+			<img src="img/vcodeicon.png" alt="">
+		</div>
+		<div class="eye">
+			<img src="img/pwicon1.png" alt="">
+		</div>
+	</div>
+	<!-- 请输入密码 -->
+	<div class="warnning">
+		<i class="warnningPic"></i>
+		<span>请输入正确的密码</span>
+	</div>
+	<!-- 验证码 -->
+	<div class="coad .coadtext">
+		<input type="text" id="coadId" placeholder="图片验证码">
+	</div>
+	<!-- 验证码错误 -->
+	<div class="warnning">
+		<i class="warnningPic"></i>
+		<span>请输入正确的验证码</span>
+	</div>
+	<div class="OB">
+		<input type="button" value="注册" class="register_btn">
+	</div>
+	<p class="agree">注册即视为同意
+		<a href="">好乐买的隐私协议</a>
+	</p>
+</div>
+
+</div>
+<div class="clearfix"></div>
+
+<div class="minifooter clearfix">
+	<p>Copyright © 2007-2019 OkBuy.com All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天津好乐买信息技术有限公司&nbsp;&nbsp;津B2-20140020&nbsp;&nbsp;京公网安备&nbsp;110105006859</p>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript">
+
+$(function(){
+
+//手机号
+	$("#userphone").focus(function(){
+		$(this).parent().css({"border":"1px solid skyblue"});
+	})
+	$("#userphone").blur(function(){
+		$(this).parent().css({"border":"1px solid #d70057"});
+		let r = /^1[1-8]\d{9}$/;
+		if(r.test(this.value)){
+			$(".true").css({"display":"block"});
+			$(".warnning:eq(0)").css({"opacity":"0"});
+		}else{
+			$(".true").css({"display":"none"});
+			$(".warnning:eq(0)").css({"opacity":"1"});
+		}
+	})
+	$("#userphone").keyup(function(){
+		$(this).parent().css({"border":"1px solid #d70099"});
+	})
+
+//密码
+	$("#userpass").focus(function(){
+		$(this).parent().css({"border":"1px solid skyblue"});
+	})
+	$("#userpass").blur(function(){
+		$(this).parent().css({"border":"1px solid #d70057"});
+		$(".warnning:eq(1)").css({"opacity":"1"});
+	})
+	$("#userpass").keyup(function(){
+		$(this).parent().css({"border":"1px solid #d70099"});
+	})
+	//
+
+//图形验证码
+	$("#coadId").focus(function(){
+		$(this).parent().css({"border":"1px solid skyblue"});
+
+	})
+	$("#coadId").blur(function(){
+		$(this).parent().css({"border":"1px solid #d70057"});
+		$(".warnning:eq(2)").css({"opacity":"1"});
+	})
+	$("#coadId").keyup(function(){
+		$(this).parent().css({"border":"1px solid #d70099"});
+	})
+
+	
+})
+
+
+
+
+</script>    
